@@ -1,0 +1,249 @@
+<html>
+<head>
+    <title>Computer site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+</head>
+<body>
+    <section id="banner">
+        <img src="image/logo.png" class="logo">
+        <div class="banner-text">
+            <h1>Tech World</h1>
+            <p>All computer accessories at one place</p> <br>
+            <div class ="banner-button">
+                <!--services
+                <a href="#">Explore</a> -->
+                <a type="button" onclick="loadDoc()"> Explore </a>
+                <p id="obj"></p>
+                <script>
+                    function loadDoc() {
+                        const xmlhttp = new XMLHttpRequest();
+                        xmlhttp.onload = function () {
+                            let person = JSON.parse(this.responseText);
+                            document.getElementById("obj").innerHTML = person.bookCollection[0].title;
+                        }
+                        xmlhttp.open("GET", "info.json", true);
+                        xmlhttp.send();
+                    }
+                    
+            
+                </script>
+                <br>
+
+                <a type="button" onclick="loadDoc2()"> Learn more </a>
+                <p id="obj2"></p>
+                <script>
+                    function loadDoc2() {
+                        const xmlhttp = new XMLHttpRequest();
+                        xmlhttp.onload = function () {
+                            let person = JSON.parse(this.responseText);
+                            document.getElementById("obj2").innerHTML = person.bookCollection[1].title;
+                        }
+                        xmlhttp.open("GET", "info.json", true);
+                        xmlhttp.send();
+                    }
+                    
+            
+                </script>
+                <br>
+
+                <a href="login.php">logout</a>
+            
+            </div>
+
+        </div>
+    </section>
+<div id = "sideNav">
+    <nav>
+    <ul>
+        <li><a href="#banner">Home</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#product">Products</a></li>
+        <li><a href="#offer">Special Offer</a></li>
+        <li><a href="#footer">Support</a></li>        
+    </ul>
+    </nav>
+</div>
+<div id="menuBtn">
+    <img src="image/menu.png" id="menu">
+</div>
+<!--services-->
+<section id= "service">
+    <div class="title-text">
+        <p>Our Services</p>
+        <h1>Why Choose Us</h1>
+    </div>
+    <div class="service-box">
+        <div class="services">
+            <h1>PC BUILDS</h1>
+            <div class="services-description ">
+                <div class="service-icon">
+                    <i class="fa fa-cube"></i>
+                </div>
+                <div class="service-text">
+                    <p>One stop computer buying and building site.Our expert team will guide you build the perfect setup according to your need.</p>
+                </div>
+            </div>
+            <h1>Experienced Technician</h1>
+            <div class="services-description ">
+                <div class="service-icon">
+                    <i class="fa fa-cube"></i>
+                </div>
+                <div class="service-text">
+                    <p>Our Computer Technician team is highly skilled.We also have trained workers for diffetent sectors to serve any kind of issues that the customer faces</p>
+                </div>
+            </div>
+            <h1>Best price in the market</h1>
+            <div class="services-description ">
+                <div class="service-icon">
+                    <i class="fa fa-cube"></i>
+                </div>
+                <div class="service-text">
+                    <p>We offer all range of Products at an affordable price</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="services-img">
+            <img src="image/Pc.jpg">
+        </div>
+
+        
+
+    </div>
+    
+
+</section>
+
+<!--product-->
+<section id="product">
+    <div class="title-text">
+    <p>Our Products</p>
+    <h1>We Provide Genuine Authentic Products</h1>
+    </div>
+
+    <div class="product-box">
+        <div class="single-product">
+            <img src="image/pr1.jpg">
+            <div class="overlay"></div>
+            <div class="product-description">
+            <h4>Desktop Computer</h4>
+            <hr>
+            <p>Desktop computers are built according to the requirements given by the customer</p>
+            <a href="desktop.php">Click to buy</a>
+            </div>
+        </div>
+        <div class="single-product">
+            <img src="image/pr2.jpg">
+            <div class="overlay"></div>
+            <div class="product-description">
+                <h4>Laptops/Notebook</h4>
+                <hr>
+                <p>Windows/Mac's both operating system supported Laptop/Notebook are available here</p>
+                <a href="laptop.php">Click to buy</a>
+            </div> 
+        </div>
+        <div class="single-product">
+            <img src="image/pr3.jpg">
+            <div class="overlay"></div>
+            <div class="product-description">
+                <h4>Wireless Routers</h4>
+                <hr>
+                <p>Wireless Routers,Wireless Reciver, Switch, Modem, Ethernet cable and other Connectivity devices are available</p>
+                <a href="router.php">Click to buy</a>
+
+            </div> 
+        </div>
+        <div class="single-product">
+            <img src="image/pr4.jpg">
+            <div class="overlay"></div>
+            <div class="product-description">
+                <h4>Computer Accessories</h4>
+                <hr>
+                <p>Keyboard, Mouse, Ram, SSD, HDD, Webcam, Microphone, External Gpu and other accessories are available</p>
+                <a href="accessories.php">Click to buy</a>
+
+            </div> 
+        </div>
+
+    </div>
+<!--offer-->
+</section>
+<section id="offer">
+    <div class="title-text">
+        <p>Special Offer</p>
+        <h1>Grab the opportunity to get special discount on various products</h1>
+        </div>
+        <div class="offer">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col">
+                        <img src="image/mac.gif" class="offer-img">
+                    
+                    <div class="col-2">
+                        <p>Flash Sale going on imac's</p>
+                        <h1>Apple IMAC</h1>
+                        <small>The iMac is a great computer, one that is a solid <br>
+                            choice for most individuals. The built-in display is wonderful. <br>
+                            Graphics and video pros are also better served by more RAM expandability <br>
+                             and more drive storage options, features that make the 27-inch iMac <br>
+                             and the Mac Pro a better choice for their needs</small>
+                             <a href="offer.html">Buy Now--></a>
+                </div>
+            </div>
+        </div>
+</section>
+<!--footer-->
+<section id="footer">
+    <div class="title-text">
+        <p>Support</p>
+        <h1>Visit our shop</h1>
+        </div>
+        <div class="footer-row">
+        <div class="footer-left">
+            <h1>Working hours</h1>
+            <p>Saturday to Thursday-8AM to 10PM</p>
+            <p>Shop and other services will remain close at Friday</p>
+
+        </div>
+        <div class="foooter-right">
+            <h1>Our Branches</h1>
+            <p>Shop:12/B,Block-D,Dhanmondi,Dhaka,BANGLADESH</p>
+            <p>65/PointView,3rd floor,Zindabazaar,Sylhet,BANGLADESH</p>
+            <p>TechWorld@Gmail.com</p>
+            <p>Contact: 01712345678</p>
+        </div>
+        </div>
+        <div class="socials">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+        </div>
+
+
+</section>
+
+
+<script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+
+    sideNav.style.right="-250";
+
+    menuBtn.onclick=function(){
+        if(sideNav.style.right == "-250px"){
+            sideNav.style.right="0";
+        }
+        else{
+            sideNav.style.right ="-250px";
+        }
+    }
+
+</script>
+    
+</body>
+</html>

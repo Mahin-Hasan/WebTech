@@ -1,0 +1,359 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+#banner{
+    background:linear-gradient(rgba(0, 0, 0, 0.5),#006988), url(image/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.logo{
+    width: 140px;
+    position: absolute;
+    top: 2%;
+    left: 6%;
+}
+.banner-text{
+    text-align: center;
+    color: #fff;
+    padding-top: 180px;
+}
+.banner-text h1{
+   font-size: 130px;
+   font-family: 'Kaushan Script', cursive;
+}
+.banner-text p{
+    font: size 40px; 
+    font-style: italic;
+}
+.banner-button a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding : 12px 0;
+    color: #fff;
+    border:.5px solid #fff ;
+}
+#sideNav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #009688;
+    z-index: 2;
+    transition: 0.5s;
+}
+nav ul li{
+    list-style: none;
+    margin:  50px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff; 
+}
+#menuBtn{
+    width: 50px;
+    height: 50px;
+    background: #009688;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+#menuBtn img{
+    width: 20px;
+    margin-top: 15px;
+}
+/*--service--*/
+#service{
+    width: 100%;
+    padding-top: 70px 0;
+}
+.title-text{
+    text-align: center;
+    padding: 70px;
+}
+.service-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    
+}
+.services{
+    flex-basis: 50%;
+}
+.services-img{
+    flex-basis: 50%;
+    margin: auto;
+
+}
+.services-img img{
+    width: 70%;
+    border-radius: 10px;
+}
+.services h1{
+    text-align: left;
+    margin: bottom;
+    font-weight: 100;
+    color: #009688;
+
+}
+.services-description{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.service-icon .fa{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;
+    color: #009689;
+    border: 1px solid #009688;
+}
+.service-text p{
+    padding: 0 2opx;
+    text-align: initial;
+}
+
+/*--product--*/
+#product{
+    width: 100%;
+    padding: 70px 0;
+    background: #e2e2e2
+}
+.product-box{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.single-product{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+}
+.single-product img{
+    width: 100%;
+    border-radius: 7px;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(32, 32, 32, 0.5),#6a9ead) ;
+    opacity: 0;
+    transition: 1s;
+
+}
+.single-product:hover .overlay{
+    opacity: 1;
+
+}
+.product-description{
+    width: 80%;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+hr{
+    background: #fff;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+
+}
+.single-product:hover .product-description{
+    bottom: 40%;
+    opacity: 1;
+
+}
+/*--offer--*/
+.col{
+    background: linear-gradient(rgba(45, 148, 173, 0.5),#ffffff) ;
+
+}
+.offer-img{
+    top: 10px;
+    padding: 240px;
+}
+.col-2{
+ padding-right: 160px;   
+ padding-bottom: 270px;
+ text-align: right;
+ font-size: 30px;
+}
+
+/*--footer --*/
+#footer{
+    padding: 100px 0 20px;
+    background: linear-gradient(rgba(248, 248, 248, 0.5),#74c9e2) ;
+
+}
+.footer-row{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left,.footer-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.socials{
+    text-align: center;
+}
+
+/*--offer--*/
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left:8%;
+    padding-right:8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+
+}
+.menuu-icon{
+    width: 25px;
+    cursor: pointer;
+
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+     list-style: none;
+     display: inline-block;
+     margin-right: 30px;
+}
+nav ul li a{
+     text-decoration: none;
+     color: #000;
+     font-size: 14px;
+}
+nav ul li a:hover{
+    color: #009688;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:100px 0;
+
+}
+.col-1{
+    flex-basis: 40%;
+    position:relative;
+    margin-left: 50px;
+}
+.col-1 h2{
+    font-size: 54px;
+
+}
+.col-1 h3{
+    font-size: 30px;
+    color: brown;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+.col-1 p{
+    font-size: 16px;
+    color: brown;
+    font-weight: 100;
+}
+.col-1 h4{
+    margin: 30px 0;
+    font-size: 20px;
+}
+.button{
+    width: 140px;
+    border: 0;
+    padding:12px 10px;
+    outline: none;
+    color: crimson;
+    background:linear-gradient(to right, rgb(89, 0, 255), ) ;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+button img{
+    width: 30px;
+    display: none;
+
+}
+button:hover img{
+    display: block;
+}
+button:hover {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.col-1 {
+    content: '';
+    width: 10px;
+    height: 57%;
+    background: linear-gradient(blue);
+    position: absolute;
+    left: -40px;
+    top:8px;
+}
+.col-2{
+    position: relative;
+    flex-basis: 60%;
+    display:flex;
+    align-items: center;
+}
+.col-2 .laptop{
+    width: 90%;
+
+}
+.color-box{
+    position: absolute;
+    right:0;
+    top:0;
+    background: linear-gradient(red);
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+    width: 80%;
+    z-index: -1;
+      transform: translate(150px);
+}

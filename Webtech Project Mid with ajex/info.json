@@ -1,0 +1,15 @@
+{
+    "name": "Mahin",
+    "age":22,
+    "bookCollection":[
+        {"title": "Know more about us.Follow us on socials Provided below.", "Aurthor":"CSS"},
+        {"title": "Build Your dream Pc with Us. Visit our shop", "Aurthor":"CSS"},
+        {"title": "Python", "Aurthor":"CSS"}
+
+
+
+    ]
+
+
+    
+}
